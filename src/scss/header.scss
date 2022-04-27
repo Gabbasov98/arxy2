@@ -1,6 +1,10 @@
 @import "vars";
 .header {
     padding: 36px 0 20px;
+    background: #222222;
+    position: sticky;
+    top: 0;
+    z-index: 10;
     &__inner {
         display: flex;
         align-items: center;
@@ -31,8 +35,17 @@
     &__time {
         margin: 0 21px 0 0;
         opacity: 0.4;
+        font-weight: 400;
     }
     &__burger {
+        display: none;
+    }
+    &__btn {
+        &-mob {
+            display: none;
+        }
+    }
+    &__socials {
         display: none;
     }
 }
@@ -40,6 +53,9 @@
 @media screen and (max-width: 992px) {
     .header {
         padding: 33px 0;
+        &__inner {
+            justify-content: flex-end;
+        }
         &__right {
             position: fixed;
             top: 100px;
@@ -73,6 +89,9 @@
             order: 3;
             margin-top: auto;
             width: 100%;
+            &-mob {
+                display: flex;
+            }
         }
         &__burger {
             width: 22px;
@@ -83,8 +102,37 @@
             border-style: 100% auto;
             display: block;
             transition: all .225s;
+            margin-left: 25px;
             &--active {
                 background-image: url(../img/burger2.svg);
+            }
+        }
+        &__logo {
+            margin-right: auto;
+        }
+        &__socials {
+            display: flex;
+            align-items: center;
+            // margin-top: 13px;
+            order: 3;
+            &-item {
+                margin-right: 7px;
+                width: 32px;
+                height: 32px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                svg {
+                    width: 32px;
+                    height: auto;
+                }
+                &--dzen {
+                    background-color: #fff;
+                }
+                &:hover {
+                    opacity: 0.8;
+                }
             }
         }
     }
@@ -98,6 +146,14 @@
         &__right {
             height: calc(100vh - 90px);
             top: 90px;
+        }
+        &__btn {
+            &-mob {
+                width: 150px;
+            }
+        }
+        &__burger {
+            margin-left: 10px;
         }
     }
 }

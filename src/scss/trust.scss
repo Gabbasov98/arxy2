@@ -98,6 +98,9 @@
         .swiper-container {
             width: 100%;
         }
+        .swiper-slide:nth-child(2) {
+            order: -1;
+        }
     }
 }
 

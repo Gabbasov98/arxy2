@@ -50,8 +50,15 @@
 
 @media screen and (max-width: 768px) {
     .modal {
+        &.show {
+            display: flex !important;
+            align-items: center;
+            justify-content: center;
+        }
         &-dialog {
             padding: 40px;
+            // top: 50%;
+            // transform: translateY(-50%);
         }
         &__title {
             width: calc(100% + 56px);

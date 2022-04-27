@@ -1,6 +1,9 @@
 @import 'vars';
 .main {
     padding-bottom: 50px;
+    background-image: url(../img/main-bg.webp);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
     &__wrap {
         display: flex;
         align-items: center;
@@ -47,6 +50,7 @@
         display: flex;
         justify-content: space-between;
         margin-top: 118px;
+        padding: 0 120px;
     }
     &__item {
         text-align: center;
@@ -78,6 +82,7 @@
         }
         &__items {
             margin-top: 24px;
+            padding: 0 40px;
         }
     }
 }
@@ -99,7 +104,7 @@
             width: 100%;
         }
         &__title {
-            max-width: 310px;
+            max-width: 250px;
             line-height: 112%;
         }
         &__desc {
@@ -115,7 +120,7 @@
             margin-top: -54px;
         }
         &__title {
-            font-size: 32px;
+            font-size: 34px;
         }
         &__desc {
             font-size: 15px;
@@ -124,6 +129,7 @@
         }
         &__items {
             display: block;
+            padding: 0;
         }
         &__item {
             display: flex;

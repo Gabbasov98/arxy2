@@ -25,6 +25,11 @@ input {
         &::placeholder {
             color: #000;
         }
+        &:focus {
+            &::placeholder {
+                color: rgba(#000, 0.3);
+            }
+        }
     }
 }
 
