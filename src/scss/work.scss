@@ -60,6 +60,9 @@
             top: 0;
             left: 0;
         }
+        &-mob {
+            display: none;
+        }
         img {
             width: 100%;
             min-height: 100%;
@@ -173,6 +176,14 @@
         &__plan {
             &-right {
                 width: 500px;
+            }
+        }
+        &__item {
+            &-mob {
+                display: unset;
+            }
+            &-dekstop {
+                display: none;
             }
         }
     }
